@@ -1,0 +1,90 @@
+diff -Nur wondershaper-1.1a.old/wshaper wondershaper-1.1a/wshaper
+--- wondershaper-1.1a.old/wshaper	2002-04-16 14:26:35.000000000 +0000
++++ wondershaper-1.1a/wshaper	2003-07-11 11:26:13.000000000 +0000
+@@ -5,30 +5,11 @@
+ #
+ # Set the following values to somewhat less than your actual download
+ # and uplink speed. In kilobits. Also set the device that is to be shaped.
+-DOWNLINK=800
+-UPLINK=220
+-DEV=eth0
+-
+-# low priority OUTGOING traffic - you can leave this blank if you want
+-# low priority source netmasks
+-NOPRIOHOSTSRC=80
+-
+-# low priority destination netmasks
+-NOPRIOHOSTDST=
+-
+-# low priority source ports
+-NOPRIOPORTSRC=
+-
+-# low priority destination ports
+-NOPRIOPORTDST=
+-
+-# Now remove the following two lines :-)
+-
+-echo Please read the documentation in 'README' first :-\)
+-exit
+ 
+ #########################################################
+ 
++. /etc/wshaper.conf
++
+ if [ "$1" = "status" ]
+ then
+ 	tc -s qdisc ls dev $DEV
+diff -Nur wondershaper-1.1a.old/wshaper.conf wondershaper-1.1a/wshaper.conf
+--- wondershaper-1.1a.old/wshaper.conf	1970-01-01 00:00:00.000000000 +0000
++++ wondershaper-1.1a/wshaper.conf	2003-07-11 11:25:00.000000000 +0000
+@@ -0,0 +1,17 @@
++# Wonder Shaper
++DOWNLINK=800
++UPLINK=220
++DEV=eth0
++
++# low priority OUTGOING traffic - you can leave this blank if you want
++# low priority source netmasks
++NOPRIOHOSTSRC=80
++
++# low priority destination netmasks
++NOPRIOHOSTDST=
++
++# low priority source ports
++NOPRIOPORTSRC=
++
++# low priority destination ports
++NOPRIOPORTDST=
+diff -Nur wondershaper-1.1a.old/wshaper.htb wondershaper-1.1a/wshaper.htb
+--- wondershaper-1.1a.old/wshaper.htb	2002-04-16 14:26:51.000000000 +0000
++++ wondershaper-1.1a/wshaper.htb	2003-07-11 11:26:20.000000000 +0000
+@@ -5,28 +5,7 @@
+ # Set the following values to somewhat less than your actual download
+ # and uplink speed. In kilobits. Also set the device that is to be shaped.
+ 
+-DOWNLINK=800
+-UPLINK=220
+-DEV=ppp0
+-
+-# low priority OUTGOING traffic - you can leave this blank if you want
+-# low priority source netmasks
+-NOPRIOHOSTSRC=
+-
+-# low priority destination netmasks
+-NOPRIOHOSTDST=
+-
+-# low priority source ports
+-NOPRIOPORTSRC=
+-
+-# low priority destination ports
+-NOPRIOPORTDST=
+-
+-
+-# Now remove the following two lines :-)
+-
+-echo Please read the documentation in 'README' first
+-exit
++. /etc/wshaper.conf
+ 
+ if [ "$1" = "status" ]
+ then
