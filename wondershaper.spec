@@ -2,7 +2,7 @@ Summary:	The Wonder Shaper
 Summary(pl):	Wonder Shaper - narzêdzie do kszta³towania wykorzystania ³±cza
 Name:		wondershaper
 Version:	1.1a
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://lartc.org/wondershaper/%{name}-%{version}.tar.gz
