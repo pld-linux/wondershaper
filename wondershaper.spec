@@ -3,15 +3,15 @@ Summary(pl):	Wonder Shaper - narzêdzie do kszta³towania wykorzystania ³±cza
 Name:		wondershaper
 Version:	1.1a
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://lartc.org/wondershaper/%{name}-%{version}.tar.gz
 # Source0-md5:	bbc5a3a4485ab286e337ce8550e7b990
 Patch0:		%{name}-conf.patch
 URL:		http://lartc.org/wondershaper/
 Requires:	iproute2
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Many cablemodem and ADSL users experience horrifying latency while
@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README ChangeLog
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/wshaper.conf
+%doc ChangeLog README TODO
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/wshaper.conf
 %attr(755,root,root) %{_bindir}/*
