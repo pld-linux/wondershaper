@@ -1,5 +1,5 @@
 Summary:	The Wonder Shaper
-Summary(pl):	Wonder Shaper - narzêdzie do kszta³towania wykorzystania ³±cza
+Summary(pl.UTF-8):   Wonder Shaper - narzÄ™dzie do ksztaÅ‚towania wykorzystania Å‚Ä…cza
 Name:		wondershaper
 Version:	1.1a
 Release:	1
@@ -20,13 +20,13 @@ downloading greatly. The wondershaper neatly addresses these issues,
 allowing users of a router with a wondershaper to continue using SSH
 over a loaded link happily.
 
-%description -l pl
-Wielu u¿ytkowników modemów kablowych i ADSL zauwa¿a przera¿aj±ce
-opó¼nienia w czasie ¶ci±gania lub wysy³ania danych, a jednocze¶nie
-widzi, ¿e wysy³anie danych bardzo przeszkadza w ¶ci±ganiu.
-wondershaper niesie pomoc w takich przypadkach, pozwalaj±c
-u¿ytkownikom routera z wondershaperem na wygodne u¿ywanie SSH po
-obci±¿onym ³±czu.
+%description -l pl.UTF-8
+Wielu uÅ¼ytkownikÃ³w modemÃ³w kablowych i ADSL zauwaÅ¼a przeraÅ¼ajÄ…ce
+opÃ³Åºnienia w czasie Å›ciÄ…gania lub wysyÅ‚ania danych, a jednoczeÅ›nie
+widzi, Å¼e wysyÅ‚anie danych bardzo przeszkadza w Å›ciÄ…ganiu.
+wondershaper niesie pomoc w takich przypadkach, pozwalajÄ…c
+uÅ¼ytkownikom routera z wondershaperem na wygodne uÅ¼ywanie SSH po
+obciÄ…Å¼onym Å‚Ä…czu.
 
 %prep
 %setup -q
