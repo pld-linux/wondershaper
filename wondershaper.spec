@@ -1,5 +1,5 @@
 Summary:	The Wonder Shaper
-Summary(pl.UTF-8):   Wonder Shaper - narzędzie do kształtowania wykorzystania łącza
+Summary(pl.UTF-8):	Wonder Shaper - narzędzie do kształtowania wykorzystania łącza
 Name:		wondershaper
 Version:	1.1a
 Release:	1
